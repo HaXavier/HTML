@@ -1,0 +1,50 @@
+@media screen and (max-width: 1024px)
+{
+    header img
+    {
+        display: none;
+    }
+
+    header
+    {
+        display: block;
+    }
+
+    ul
+    {
+        margin: 5px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    li
+    {
+        margin: 1px;
+    }
+
+    main
+    {
+        flex-direction: column;
+    }
+
+    main img
+    {
+        max-width: 300px;
+    }
+
+    h1
+    {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    p
+    {
+        text-align:center;
+        font-size: 18px;
+        line-height: 23px;
+        padding: 10px;
+    }
+}

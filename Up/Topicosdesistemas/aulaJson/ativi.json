@@ -1,0 +1,17 @@
+[
+    {
+        "nome" : "Fernando",
+        "email" : "fernado@gmail.com",
+        "idade" : 9,
+        "statusatiextra" : true, 
+        "atiextra" :["natação"]
+    },
+
+    {
+        "nome" : "Juliana",
+        "email" : "juliagameplay@gmail.com",
+        "idade" : 7,
+        "statusatiextra" : false,
+        "atiextra" :[null]
+    }
+]
