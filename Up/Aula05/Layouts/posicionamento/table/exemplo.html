@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout de tabelas</title>
+
+<style>
+  html {
+    font-family: sans-serif;
+  }
+
+  form {
+    display: table;
+    margin: 0 auto;
+  }
+
+  form div {
+    display: table-row;
+  }
+
+  form label, form input {
+    display: table-cell;
+    margin-bottom: 10px;
+  }
+
+  form label {
+    width: 100px;
+    padding-right: 5%;
+    text-align: right;
+  }
+
+  form input {
+    width: 300px;
+  }
+
+  form p {
+    text-align: center;
+    display: table-caption;
+    caption-side: bottom;
+    width: 480px;
+    color: #df1414;
+    font-weight: bold;
+  }
+</style>
+
+</head>
+<body>
+  <form>
+    <p>Não se usa mais. Ver Flexbox e Grid</p>
+    <div>
+      <label for="fname">Nome:</label>
+      <input type="text" id="fname">
+    </div>
+    <div>
+      <label for="lname">Sobrenome:</label>
+      <input type="text" id="lname">
+    </div>
+    <div>
+      <label for="age">Idade:</label>
+      <input type="text" id="age">
+    </div>
+  </form>
+</body>
+</html>

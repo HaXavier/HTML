@@ -1,0 +1,114 @@
+/* {
+    border:  1px dashed orange;
+    display: inline;
+} */
+
+/*html {
+    border: 1px dashed orange;
+}*/
+
+/* html  *{
+    border: 1px dashed orange;
+} */
+
+/* body  *{
+    border: 1px dashed orange;
+} */
+
+/* main *{
+    border: 1px dashed orange;
+} */
+
+/* article *{
+    border: 1px dashed orange;
+    background-color: antiquewhite;
+    margin: 0px;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    padding-left: 90px;
+} */
+
+/* article > img {
+    border: 0px;
+    background-color: white;
+} */
+
+/* article *{ */
+
+header {
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+
+    article > p {
+    /* border: 1px dashed orange; */
+    border-width: 2px;
+    border-style: dashed;
+    /* border-color: blue; */
+    border-top-color: aqua;
+    border-right-color: black;
+    border-bottom-color: blueviolet;
+    border-left-color: green;
+
+
+    background-color: antiquewhite;
+    margin: 0px;
+    padding: 10px 20px;
+}
+
+
+
+li {
+    display: inline-flex;
+    border: 1px solid black;
+    margin: 2px;
+    background-color:antiquewhite;
+    border-radius: 10px;
+}
+
+li:hover{
+    background-color: yellow;
+    
+}
+
+li > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px;
+}
+
+header {
+    background-color: rgb(105, 111, 165);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+main {
+    margin-top:0px;
+}
+
+
+header, nav {
+    /* border: 1px solid black; */
+    vertical-align: middle;
+}
+
+nav {
+    float: right;
+}
+
+main {
+    display:flex ;
+    justify-content: space-around;
+
+}
+footer
+{
+    text-align: center;
+}

@@ -1,0 +1,60 @@
+<html>
+
+    <head>
+        <title>Exemplo DOM</title>
+        <script>
+            window.onload = ()=> {
+                var btnRemoverNIntrusivo = document.getElementById('btnNaoIntrusivo');
+                btnRemoverNIntrusivo.onclick = () =>{
+                    document.body.children[5].remove();
+                }
+
+                var contador = 1;
+
+                function incluirElementos(){
+                    var txtTexto = document.getElementById('txtTexto');
+                    var paragrafo = document.createElement('p');      
+                    var texto = "Texto " + contador++ + ": " + txtTexto.value;              
+                    paragrafo.innerText = texto;
+                    document.body.appendChild(paragrafo);
+                }
+                var btnIncluir = document.querySelector('#btnIncluir');
+                btnIncluir.addEventListener('click', ()=> {
+                    incluirElementos();
+                });
+
+                function getNumAleatorio(){
+                    return Math.random(255) * 100;
+                }
+
+                function trocarCor(){
+                    var cor = 'rgb(' + getNumAleatorio() + ', ' 
+                                     + getNumAleatorio() + ', '
+                                     + getNumAleatorio() + ')';
+                    document.body.style.backgroundColor = cor;               
+                }
+
+                var btnTrocarCor = document.getElementById('btnTrocarCor');
+                btnTrocarCor.onclick = ()=> {
+                    trocarCor();
+                };
+
+                setInterval(trocarCor, 500);
+
+            }            
+        </script>       
+    </head>
+    
+    <body>
+        <h1>Exemplo Document Object Model (DOM)</h1>
+        <button onclick="alert('Legal, funcionou...')">Clique-me</button>
+        <button onclick="document.body.children[4].remove()">Remover</button>
+        <button id="btnNaoIntrusivo">Remover (Não intrusivo)</button>
+        <button id="btnIncluir">Incluir</button>
+        <button id="btnTrocarCor">Trocar cor</button>
+        <input  id="txtTexto" type="text">
+        <p>Utilização do DOM</p>
+        <p>Integração de HTML, CSS e JS</p>
+    </body>
+
+</html>

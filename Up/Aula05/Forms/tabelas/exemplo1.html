@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela responsiva</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="tablescroll" role="region" aria-labelledby="pricelist" tabindex="0">
+  <table>
+    <caption id="pricelist">Lista de preços de medicamentos para pets</caption>
+    <colgroup>
+      <col class="item">
+      <col>
+      <col span="2" class="retail">
+      <col span="3" class="case">
+    </colgroup>
+  <thead>
+     <tr>
+      <td></td>
+      <td></td>
+       <th colspan="2" scope="colgroup">Varejo</th>
+      <th colspan="3" scope="colgroup">Atacado</th>
+    </tr>
+    <tr>
+      <th scope="col">Item #	</th>
+      <th scope="col">Produto ou serviço	</th>
+      <th scope="col">Preço (Unit.)	</th>
+      <th scope="col">Preço (Cx.)	</th>
+      <th scope="col">Preço (Unit.)</th>	
+      <th scope="col">Preço (Cx.)</th>	
+      <th scope="col">Desconto (Cx.)</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <td>100050	</td>
+        <td>Escova e pasta de dentes Advance Pet</td>
+        <td>9,55 </td>	
+        <td>108,87</td>	
+        <td>5,73</td>	
+        <td>103,14	</td>
+        <td>11,46</td>
+      </tr>
+      <tr>
+        <td>100043	</td>
+        <td>Limpeza e exame básico dos dentes</td>
+        <td>100,00 </td>	
+        <td>1.140,00	</td>
+        <td>60,00	</td>
+        <td>1.080,00	</td>
+        <td>120,00</td>
+      </tr>
+      <tr>
+        <td>100013	</td>
+        <td>Spray para alívio de ansiedade de gato</td>
+        <td>9,49 </td>	
+        <td>108,19	</td>
+        <td>5,69	</td>
+        <td>102,49	</td>
+        <td>11,39</td>
+      </tr>
+      <tr>
+        <td>100041	</td>
+        <td>Gel para bola de pelos em gato</td>
+        <td>6,00 </td>	
+        <td>68,40	</td>
+        <td>3,60	</td>
+        <td>64,80</td>	
+        <td>7,20</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td>Total</td>
+        <td>125,04</td>
+        <td>1.425,46</td>
+        <td>75,02</td>
+        <td>1.350,43</td>
+        <td>150,05</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+  
+</body>
+</html>

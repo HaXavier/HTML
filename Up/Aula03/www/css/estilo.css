@@ -1,0 +1,37 @@
+header, nav, main, aside, footer {
+    border: 2px black solid;
+    margin: 5px;
+    background-color: beige;
+}
+
+p {
+    color:blue
+}
+
+#txt3sec2 {
+    color: orange;
+    font-size: 25px;
+    border: 2px red solid;
+    display: inline-block;
+    padding: 20px;
+    /* margin: 100px; */
+    /* margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 100px;
+    margin-bottom: 10px; */
+    margin: 50px 30px 100px 10px;
+}
+
+p.txtEspecial {
+    color:green;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+body > main > section:nth-child(2) > article:nth-child(3) > p {
+    color: violet
+}
+
+/* img, p {
+    display: none;
+} */

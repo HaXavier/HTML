@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Form responsivo</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+  </head>
+  <body>
+    <header>
+      <h1>Formulário responsivo com Flexbox</h1>
+      <p>
+        O LayoutFlexible Layout Box Model, mais conhecido como Flexbox, é uma ótima ferramenta para criar áreas responsivas ou elementos de interface do usuário. Embora não seja adequado para layouts de página complexos, o Flexbox se destaca no controle de elementos em um único eixo ou na organização de elementos em pequenas áreas. Isso torna o Flexbox uma ferramenta fantástica para a criação de elementos de página responsivos que normalmente são difíceis de manusear, como formulários. Freqüentemente, o Flexbox pode criar componentes responsivos com uma quantidade mínima de código.</p>
+      <h2>Formulário complexo</h2>
+      <p>Neste exemplo, será utilizado o Flexbox para construir um formulário que possui várias seções e vários tipos de elementos de formulário.</p>
+    </header>
+    <article class="example">
+      <form class="register-form">
+        <section class="form-group">
+          <h3>Dados pessoais</h3>
+          <ul class="form-fields">
+            <li>
+              <label for="name">Nome:</label>
+              <input type="text" name="name" id="name" placeholder="digitar nome completo" class="text-input"></li>
+            <li>
+              <label for="street-address">Rua:</label>
+              <input type="text" name="street-address" id="street-address" placeholder="rua do endereço" class="text-input"></li>
+            <li>
+              <label for="city">Cidade:</label>
+              <input type="text" name="city" id="city" placeholder="cidade" class="text-input"></li>
+            <li>
+              <label for="state">Estado:</label>
+              <select class="select-menu" id="state" name="state">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </li>
+            <li>
+              <label for="street-address">CEP:</label>
+              <input type="text" name="zip-code" id="zip-code" placeholder="código postal" class="text-input"></li>
+            <li>
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" id="email" placeholder="e-mail" class="text-input"></li>
+          </ul>
+          <h4>Informações adicionais</h4>
+          <p>Estas informações estarão em seu crachá e nos ajudará a orientá-lo com informações dos eventos durante a conferência.
+            <ul class="form-fields">
+              <li>
+                <label for="description">Função:</label>
+                <select class="select-menu" id="description" name="description">
+                  <option value="designer">Designer</option>
+                  <option value="developer">Desenvolvedor</option>
+                  <option value="other">Outro</option>
+                </select>
+              </li>
+              <li>
+                <label for="job-title">Cargo:</label>
+                <input type="text" name="job-title" id="job-title" placeholder="cargo" class="text-input"></li>
+              <li>
+                <label for="company">Empresa:</label>
+                <input type="text" name="company" id="company" placeholder="empresa" class="text-input"></li>
+              <li>
+                <label for="phone">Telefone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="número de telefone" class="text-input"></li>
+            </ul>
+          </p>
+        </section>
+        <section class="form-group">
+          <h3>Sessões</h3>
+          <h4>Habilidades</h4>
+          <p>As habilidades abaixo nos ajudarão a combinar nossas sessões!</p>
+          <ul class="form-skills">
+            <li><input type="checkbox" id="css" value="css">
+              <label for="css">CSS</label>
+            </li>
+            <li><input type="checkbox" id="html" value="html">
+              <label for="html">HTML</label>
+            </li>
+            <li><input type="checkbox" id="js" value="js">
+              <label for="js">JavaScript</label>
+            </li>
+            <li><input type="checkbox" id="ux" value="ux">
+              <label for="ux">UX</label>
+            </li>
+            <li><input type="checkbox" id="rails" value="rails">
+              <label for="rails">Rails</label>
+            </li>
+            <li><input type="checkbox" id="node" value="node">
+              <label for="node">Node</label>
+            </li>
+            <li><input type="checkbox" id="sass" value="sass">
+              <label for="sass">SASS</label>
+            </li>
+            <li><input type="checkbox" id="mobile" value="mobile">
+              <label for="mobile">Mobile</label>
+            </li>
+          </ul>
+          <h4>Workshops</h4>
+          <p>Os workshops são aulas práticas de meio período. Cada um tem um adicional de R$ 50,00.</p>
+          <ul class="form-workshop">
+            <li><input type="checkbox" id="forms-ws" value="forms">
+              <label for="forms-ws">Criar formulários responsivos com Flexbox</label>
+            </li>
+            <li><input type="checkbox" id="usability-ws" value="usability">
+              <label for="usability-ws">Teste de usabilidade</label>
+            </li>
+            <li><input type="checkbox" id="node-ws" value="node">
+              <label for="node-ws">Desenvolvimento com Node</label>
+            </li>
+          </ul>
+          <h4>Almoço</h4>
+          <p>O almoço é servido todos os dias. Temos opções vegetarianas e opções sem glúten. Informe-nos sobre quaisquer restrições alimentares.</p>
+          <ul class="form-food">
+            <li><input type="radio" id="meat" value="meat" name="food">
+              <label for="meat">Frango, carne ou peixe</label>
+            </li>
+            <li><input type="radio" id="vegetarian" value="vegetarian" name="food">
+              <label for="vegetarian">Vegetariano</label>
+            </li>
+            <li><input type="radio" id="gluten" value="gluten" name="food">
+              <label for="gluten">Sem glúten</label>
+            </li>
+            <li>
+              <label for="food-options">Liste todas as restrições alimentares:</label>
+              <textarea id="food-options" name="food-options" class="text-area">alergias alimentares ou outras restrições</textarea>
+            </li>
+          </ul>
+        </section>
+        <section class="form-submit">
+          <h4>Concluiu?</h4>
+          <p>Estamos ansiosos para vê-lo!</p>
+          <button type="submit" class="register-btn">Confirmar</button>
+        </section>
+      </form>
+    </article>
+  </body>
+</html>
+

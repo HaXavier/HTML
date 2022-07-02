@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nesting</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: "Roboto";
+      font-size: 20px;
+    }
+
+    .wrapper > * {
+        border: 2px solid #f08c00;
+        background-color: #ffec99;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .wrapper {
+      display: grid; 
+      grid-template-columns: repeat(5, 1fr);
+
+      /* gap: 10px; */
+      column-gap: 10px;
+      row-gap: 15px;
+    }
+
+    .box1 {
+      /* grid-column-start: 1;
+      grid-column-end: 6  ; */
+      grid-column: 1 / 6;
+      /* grid-row-start: 1;
+      grid-row-end: 3; */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;    
+    }
+
+    .box1 > * {
+        background-color: #faf5e0;
+        border: 1px solid #fdb653;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box box1">
+      <div class="nested">a</div>
+      <div class="nested">b</div>
+      <div class="nested">c</div>
+    </div>
+    <div class="box box2">Two</div>
+    <div class="box box3">Three</div> 
+    <div class="box box4">Four</div>
+    <div class="box box5">Five</div>
+  </div>
+</body>
+</html>

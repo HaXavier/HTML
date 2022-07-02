@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Bootstrap-Layout</title>
+    <style>
+      header,
+      nav,
+      article,
+      aside,
+      div.ad,
+      footer {
+        border: 2px solid #d19017;
+        background-color: #ffec99;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      body {
+        min-width: 300px;
+      }
+
+      @media (min-width: 1500px){
+        body {
+          padding: 0 10% 0 10% !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="container-fluid">
+    <header class="main-head row m-2">Cabeçalho</header>
+    <div class="row m-2">
+      <nav class="main-nav row col-12 col-md-2 gx-0 mb-2 mb-md-0">
+        <ul class="nav flex-column flex-sm-row flex-md-column">
+          <li class="nav-item"><a class="nav-link" href="">Nav 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Nav 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Nav 3</a></li>
+        </ul>
+      </nav>
+      <div class="col-12 gx-0 gx-md-4 col-sm-8 mb-2 mb-sm-0">
+        <article>
+          <h2>Área do conteúdo principal</h2>
+          <p>Neste layout bootstrap é realizada a formatação de layout para 
+            dispositivos x-small &lt; 576px, small (sm) &GreaterEqual; 576px, medium (md)
+            &GreaterEqual; 768px, large (lg) &GreaterEqual; 992px, extra large (xl) 
+            &GreaterEqual; 1200px. O layout inicia com uma coluna, vai para duas e, em seguida, 
+            para um layout de três colunas redefinindo a colocação de itens na grade.</p>
+          <p>Neste layout bootstrap é realizada a formatação de layout para 
+            dispositivos x-small &lt; 576px, small (sm) &GreaterEqual; 576px, medium (md)
+            &GreaterEqual; 768px, large (lg) &GreaterEqual; 992px, extra large (xl) 
+            &GreaterEqual; 1200px. O layout inicia com uma coluna, vai para duas e, em seguida, 
+            para um layout de três colunas redefinindo a colocação de itens na grade.</p>
+        </article>
+      </div>
+      <div class="row col-12 gx-0 ms-sm-1 ms-md-0 gx-sm-2 gx-md-0 col-sm-4 col-md-2 ">
+        <aside class="side p-1 mb-2">Barra lateral</aside>
+        <div class="ad">Anúncios</div>
+      </div>
+    </div>
+    <footer class="main-footer row m-2">Rodapé</footer>
+  </body>
+</html>
+

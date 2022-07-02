@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-Layout</title>
+    <style>
+      .main-head,
+      .main-nav,
+      .article,
+      .barra,
+      .anuncio,
+      .main-footer {
+        border: 2px solid #d19017;
+        background-color: #ffec99;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      body {
+        min-width: 300px;
+      }
+
+      /* @media (min-width: 1500px){
+        body {
+          padding: 0 10% 0 10% !important;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <header class="main-head">Cabeçalho</header>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="">Nav 1</a></li>
+        <li><a href="">Nav 2</a></li>
+        <li><a href="">Nav 3</a></li>
+      </ul>
+    </nav>
+    <article class="article">
+      <h2>Área do conteúdo principal</h2>
+      <p>Neste layout bootstrap é realizada a formatação de layout para 
+        dispositivos x-small &lt; 576px, small (sm) &GreaterEqual; 576px, medium (md)
+        &GreaterEqual; 768px, large (lg) &GreaterEqual; 992px, extra large (xl) 
+        &GreaterEqual; 1200px. O layout inicia com uma coluna, vai para duas e, em seguida, 
+        para um layout de três colunas redefinindo a colocação de itens na grade.</p>
+      <p>Neste layout bootstrap é realizada a formatação de layout para 
+        dispositivos x-small &lt; 576px, small (sm) &GreaterEqual; 576px, medium (md)
+        &GreaterEqual; 768px, large (lg) &GreaterEqual; 992px, extra large (xl) 
+        &GreaterEqual; 1200px. O layout inicia com uma coluna, vai para duas e, em seguida, 
+        para um layout de três colunas redefinindo a colocação de itens na grade.</p>
+    </article>
+    <aside class="barra">Barra lateral</aside>
+    <div class="anuncio">Anúncios</div>
+    <footer class="main-footer">Rodapé</footer>
+  </body>
+</html>
