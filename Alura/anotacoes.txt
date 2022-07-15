@@ -1,0 +1,18 @@
+em: italico 
+strong/b: negrito
+
+header: cabecalho
+main: conteudo principal
+div: representa divisao
+
+ul: lista nao ordenada
+ol: lista ordenada
+li: lista
+
+border-style: dotted = borda fica com efeito de bolinhas
+border-style: dashed = risquinhos
+border-style: solid = efeito solido
+ 
+:hover: quando mouse passa por cima
+:active: quando mouse clica 
+
