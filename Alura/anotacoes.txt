@@ -16,3 +16,35 @@ border-style: solid = efeito solido
 :hover: quando mouse passa por cima
 :active: quando mouse clica 
 
+_________________________________________________________________
+Exemplos Para formar blocos de forma mais rápidae eficaz:       |
+                                                                |
+nav.navegacao>ul>li#itens$*5{texto}>a                           |
+    <nav class="navegacao">                                     |
+        <ul>                                                    |
+            <li id="itens1">texto<a href=""></a></li>           |
+            <li id="itens2">texto<a href=""></a></li>           |
+            <li id="itens3">texto<a href=""></a></li>           |
+            <li id="itens4">texto<a href=""></a></li>           |
+            <li id="itens5">texto<a href=""></a></li>           |
+        </ul>                                                   |
+    </nav>                                                      |
+                                                                |
+nav.navegacao>ul>li.itens*5>a                                   |
+    <nav class="navegacao">                                     |
+        <ul>                                                    |
+            <li class="itens">texto<a href=""></a></li>         |
+            <li class="itens">texto<a href=""></a></li>         |
+            <li class="itens">texto<a href=""></a></li>         |
+            <li class="itens">texto<a href=""></a></li>         |
+            <li class="itens">texto<a href=""></a></li>         |
+        </ul>                                                   |
+    </nav>                                                      |
+                                                                |
+header>h1+p{Conteúdo}+h2                                        |
+    <header>                                                    |
+        <h1></h1>                                               |
+        <p>Conteúdo</p>                                         |
+        <h2></h2>                                               |
+    </header>                                                   |
+_________________________________________________________________
