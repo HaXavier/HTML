@@ -1,0 +1,173 @@
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0 20px 0;
+}
+
+div.caixa {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 6px;
+    /* border: 3px solid #57606f; */
+    border-radius: 8px;
+    /* background-color: #a4b0be; */
+    transition: background-color .3s;
+}
+
+nav a:hover {
+    background-color: #ced6e0;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /* background-color: #CCCCCC; */
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: solid black;
+    border-radius: 15px;
+    transition: border .3s, border-radius .1s;
+    border-width: 10px 3px;
+}
+
+.produtos li:hover {
+    border: 5px solid #273c75;
+}
+
+.produtos li:active {
+    border-radius: 85px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+    transition: font-size .3s;
+}
+
+.produtos li:hover h2 {
+    font-size: 26px;
+}
+
+.produtos img {
+    width: 100%;
+    transition: width .3s;
+}
+
+.produtos li:hover img {
+    width: 95%;
+}
+
+.produto-descricao {
+    font-size: 18px;
+
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0 ;
+}
+
+footer {
+    text-align: center;
+    background: url("../images/bg.jpg");
+    padding: 35px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 15px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0px 0px 10px;
+}
+
+form label,form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    width: 50%;
+}
+
+.checkbox {
+    margin:20px 0 0 0;
+}
+
+.botao {
+    margin: 20px 0 45px 0;
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font: bold 18px Arial;
+    border: none;
+    border-radius: 8px;
+    transition: .3s all;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: rgb(235, 129, 0);
+    transform:scale(1.2);
+}
+
+table {
+    margin: 10px 0 50px 10px ;
+}
+
+thead {
+    background-color: #555555;
+   font-weight: bold;
+   color: white;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 15px 18px;
+}
+
+.exx {
+    text-align: center;
+}

@@ -1,3 +1,6 @@
+_________________________________________________________________
+_________________________________________________________________
+-- HTML --
 em: italico 
 strong/b: negrito
 
@@ -9,13 +12,115 @@ ul: lista nao ordenada
 ol: lista ordenada
 li: lista
 
+form: para formulário
+fieldset: para divisôes no formulário
+legend: título das partes do formulário
+label e input andam juntos
+textarea: caixa de mensagem formada por cols(colunas) e rows(linhas)
+checked: dentro do input para já deixar selecionado ao entrar na página
+required: torna o campo o campo obrigatório para ser preenchido
+placeholder: sugestão para preencher
+
+TABELAS{
+
+    table: para tabela
+    tr: linha da tabela(table row)
+    td: uma célula onde fica o conteúdo (table data cell) 
+    colspan: caso sej algo que vai utilizar mais de uma célula de espaco usar
+    EX: <tr>
+            <td colspan="2">Rio de Janeiro</td>
+        </tr>
+    tabelas são divididas assim como HTML(header, main, footer),
+        mas com uma semântica diferente;
+    EX:<table>
+            <thead>('thead' é o cabecalho)
+                <tr>
+                    <th>Dia</th>('th' usamos para o thead)
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>('tbody' é o conteúdo)
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+            (Para o rodapé usamos o 'tfoot')
+        </table>
+}
+
+INPUTS{
+
+    text: caixa de texto
+    number: caixa de número
+    radio: bolinha para selecionar(obs: ter mesmo 'name' para que não possa selecionar mais de
+                                    um, a não ser que o objetivo seja selecionar mais de um)
+    checkbox: caixa para selecionar
+    email: para facilitar colocar email
+    tel: para telefone
+    password: senha
+    date: datas
+    datetime: para data e horario
+    month: para mês     
+    search: para busca
+
+}
+
+_________________________________________________________________
+_________________________________________________________________
+
+-- CSS --
 border-style: dotted = borda fica com efeito de bolinhas
 border-style: dashed = risquinhos
 border-style: solid = efeito solido
+cursor: pointer = cursor fica com efeito de que da para clicar
  
 :hover: quando mouse passa por cima
 :active: quando mouse clica 
 
+virgula é usa para fazer uma tag ter aqueles atributos 
+EX: form input, form textarea{(Aqui tanto o input como o textarea teram os atributos)
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    width: 50%;
+}
+
+inline(dentro do próprio elemento como <p>style:"color:white;"</p>) será o mais forte de todos e 
+    id(seria como força 100) será sempre mais forte que class(seria como força 10 e tag força 1);
+EX: p { = 1
+        color:red;
+    }
+    form p { = 1+1 = 2
+        color:blue;
+    }
+    .teste { = 10
+        color:yellow;
+    }
+    p.teste { = 1+10 = 11 
+        color:orange
+    }
+    #teste { = 100
+        color:pink
+    }
+
+transition para selecionar todos os elementos se usa all(caso seja o mesmo tempo para ambos)
+ex: antes(transition: border .3s, border-radius .3s;) depois(transition: .3s all;) 
+
+TRANSFORM {
+    Os dois juntos sem uso de vírgula: transform:rotate(52deg) scale(1.5); 
+    rotate(70deg)= rotacionará o elemento no valor escolhido em graus(deg significa degress no caso graus)
+    scale(1.2)= aumentará o tamanho do elemento em quantos % querer
+}
+_________________________________________________________________
 _________________________________________________________________
 Exemplos Para formar blocos de forma mais rápidae eficaz:       |
                                                                 |
@@ -48,3 +153,9 @@ header>h1+p{Conteúdo}+h2                                        |
         <h2></h2>                                               |
     </header>                                                   |
 _________________________________________________________________
+_________________________________________________________________
+
+
+
+
+
