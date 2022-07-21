@@ -6,7 +6,8 @@ strong/b: negrito
 
 header: cabecalho
 main: conteudo principal
-div: representa divisao
+div: representa divisao visual
+section: representa divisao com conteúdo complexo titulo texto
 
 ul: lista nao ordenada
 ol: lista ordenada
@@ -20,6 +21,22 @@ textarea: caixa de mensagem formada por cols(colunas) e rows(linhas)
 checked: dentro do input para já deixar selecionado ao entrar na página
 required: torna o campo o campo obrigatório para ser preenchido
 placeholder: sugestão para preencher
+
+OBS {
+Quando usar inline-block no CSS para que fiquem alinhados os itens devem estar:
+    <div class="conteudo-beneficios">
+        <ul class="lista-beneficios">
+            <li class="itens">Limpeza</li>
+ASSIM --->  </ul><img src="images/beneficios.jpg" class="imagem-beneficios">
+    </div>
+
+    <div class="conteudo-beneficios">
+        <ul class="lista-beneficios">
+            <li class="itens">Limpeza</li>
+Ñ ASSIM ---></ul>
+            <img src="images/beneficios.jpg" class="imagem-beneficios">
+    </div>  (Se deixar da forma errada os intens nao ficaram alinhados)
+}
 
 TABELAS{
 
@@ -78,11 +95,21 @@ _________________________________________________________________
 _________________________________________________________________
 
 -- CSS --
-border-style: dotted = borda fica com efeito de bolinhas
-border-style: dashed = risquinhos
-border-style: solid = efeito solido
-cursor: pointer = cursor fica com efeito de que da para clicar
- 
+border-style: dotted = borda fica com efeito de bolinhas;
+border-style: dashed = risquinhos;
+border-style: solid = efeito solido;
+cursor: pointer = cursor fica com efeito de que da para clicar;
+em: forma de medida que aumentará ou diminuira a partir da medida inicial
+    como por exemplo, 'font-size: 2em;' caso o tamanho inicial seja 15px
+    o '2em' será igual a 30px e assim em diante;
+float: tanto float:left quanto o float: right servem para que o elemento se destaque na tela,deixe de
+    ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele;
+clear: usado para remover alteracoes, como por exemplo se tiver um float: left 
+    usaria clear: left;
+line-height: espaço entre as linha ex: line-height: 1.5em;
+vertical-align: em que lado ficara a lista ou texto(top, middle, baseline, bottom, entre outros);
+
+
 :hover: quando mouse passa por cima
 :active: quando mouse clica 
 
@@ -115,11 +142,93 @@ EX: p { = 1
 transition para selecionar todos os elementos se usa all(caso seja o mesmo tempo para ambos)
 ex: antes(transition: border .3s, border-radius .3s;) depois(transition: .3s all;) 
 
-TRANSFORM {
+*TRANSFORM* {
     Os dois juntos sem uso de vírgula: transform:rotate(52deg) scale(1.5); 
     rotate(70deg)= rotacionará o elemento no valor escolhido em graus(deg significa degress no caso graus)
     scale(1.2)= aumentará o tamanho do elemento em quantos % querer
 }
+
+*PSEUDOELEMENTOS* {
+
+    Seleciona um item de uma classe pseudoelemento, como no exemplo que usamos o first-child, para 
+    selecionar o primeiro irem de uma lista:
+        elemento-qualquer:first-child {
+            font-weight: bold;
+        }
+
+    Seleciona o último item:
+        elemento-qualquer:last-child {
+            font-weight: bold;
+        }
+
+    Pode selecionar qualquer item:
+        elemento-qualquer:nth-child(3) { (nth significa qualquer item, aqui no cado foi o 3º item)
+            font-weight: bold;
+        }
+
+    Pode selecionar qualquer item e com o 'n' ao lado será todos os valores pares ou ímpares
+        elemento-qualquer:nth-child(2n) { (No caso se for uma lista de 6 elementos, selecionará o 2º, 4º, 6º)
+        font-weight: bold;
+        }
+
+    Temos o exemplo tambem com primeiras linhas e letras:
+        elemento-qualquer:first-letter { (Todas as primeiras letras serão afetadas)
+            font-weight: bold;
+        }
+
+        elementor-qualquer:first-line { (Todas as primeiras linhas serão afetadas)
+            font-weight: bold;
+        }
+
+    Pode sem adicionado antes e/ou depois dos elementos:
+        elemento-qualquer:before {
+            content: "[ ";(O 'content' significa conteúdo e se pode colocar o que quiser dentro dele)
+        }
+
+        elemento-qualquer:after {
+            content: " ]";
+        }
+
+        EX: <html>
+                <p class="elemento-qualquer">Conteúdo qualquer</p>
+            </html>
+
+        Será exibido para o usuário: [ Conteúdo qualquer ]     
+}
+
+*GRADIENTES* {
+    Com o gradiente podemos fazer transições de cores tanto em circulos como em linhas:
+
+        background: linear-gradient(?deg,aqui é onde colocamos as cores) 
+            O '?deg' é onde pode colocar em quantos graus quer q fique as cores;
+            Temos o linear com de forma em linhas;
+            Temos o radial na forma circular(obs: ñ se usa o deg por ser forma circular);
+
+        Exemplos:
+            elemento-qualquer{
+                background: linear-gradient(#FEFEFE, #888888);
+            }
+
+            elemento-qualquer{
+                background: linear-gradient(orange, blue, gray);
+            }
+
+            elemento-qualquer{
+                background: linear-gradient(45deg, orange, blue, gray);
+            }
+
+            elemento-qualquer{
+                background: linear-gradient(35deg, orange 50%, blue 10%, gray);
+                    O '50%' representa q a cor pegará 50% do gradiente, mas pode usar o que for 
+                    preciso nas outras cores;
+            }
+
+            elemento-qualquer{
+                background: radial-gradient(orange 35%, blue, gray);
+            }
+
+}
+
 _________________________________________________________________
 _________________________________________________________________
 Exemplos Para formar blocos de forma mais rápidae eficaz:       |
